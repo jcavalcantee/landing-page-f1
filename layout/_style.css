@@ -20,7 +20,19 @@
     background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.55) 20%, #040203 100%);
 }
 
-.content {
+.content h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    font-family: var(--fontF1Titles);
+    font-size: xx-large;
+}
+
+.content p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,7 +40,8 @@
     color: #fff;
     text-align: center;
     z-index: 1;
-    font-size: xx-large;
+    font-family: var(--fontF1Text);
+    font-size: medium;
 }
 
 header {
@@ -68,24 +81,41 @@ h1 {
     font-family: var(--fontF1Text);
 }
 
-.grand-prix h1 {
-    font-family: var(--fontF1Titles);
-    font-size: xx-large;
-    color: black;
+#grand-prix {
+    background-image: url(/src/bandeira.avif);
+    clear: both;
+    padding: 20px 0;
 }
 
-.grand-prix p {
+#grand-prix h1 {
+    background-color: black;
+    padding-top: 20px;
+    text-align: center;
+    font-family: var(--fontF1Titles);
+    font-size: xx-large;
+    color: white;
+}
+
+#grand-prix p {
+    background-color: black;
+    text-align: center;
     font-family: var(--fontF1Text);
-    color: black;
+    color: white;
 }
 
 .gps {
-    background-color: white;
+    background-color: black;
 }
 
 figcaption {
     font-family: var(--fontF1Text);
-    color: black;
+    color: white;
+}
+
+.grand-prix-container {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 4%;
 }
 
 .grand-prix-container ol {
@@ -103,4 +133,35 @@ figcaption {
 
 .grand-prix-container img {
     max-width: 65%;
+}
+
+.footer {
+    background-color: red;
+}
+
+.logo-footer {
+    max-width: 10%;
+    padding-left: 45%;
+    padding-top: 1.5%;
+}
+
+.footer-itens ul li {
+    padding-top: 2%;
+    display: inline-block;
+    padding-left: 8%;
+    text-align: center;
+}
+
+.footer-itens a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--fontF1Text);
+    font-size: small;
+}
+
+.footer-itens p {
+    padding: 2%;
+    color: white;
+    font-family: var(--fontF1Text);
+    text-align: center;
 }

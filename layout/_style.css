@@ -1,0 +1,106 @@
+.back-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.back-video video {
+    width: 100%;
+    height: 100%;
+}
+
+.back-video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.55) 20%, #040203 100%);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    font-size: xx-large;
+}
+
+header {
+    padding: 15px 6px 13px 6px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grand-prix-container a {
+    text-decoration: none;
+}
+
+.logo {
+    padding-left: 20px;
+    max-width: 50%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-itens a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--fontF1Titles);
+    font-size: bold;
+}
+
+.nav-itens ul li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+h1 {
+    font-family: var(--fontF1Text);
+}
+
+.grand-prix h1 {
+    font-family: var(--fontF1Titles);
+    font-size: xx-large;
+    color: black;
+}
+
+.grand-prix p {
+    font-family: var(--fontF1Text);
+    color: black;
+}
+
+.gps {
+    background-color: white;
+}
+
+figcaption {
+    font-family: var(--fontF1Text);
+    color: black;
+}
+
+.grand-prix-container ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grand-prix-container li {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.grand-prix-container img {
+    max-width: 65%;
+}

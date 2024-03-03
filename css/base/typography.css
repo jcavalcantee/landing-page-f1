@@ -1,0 +1,14 @@
+:root {
+    --fontF1Titles: F1bold;
+    --fontF1Text: F1regular;
+}
+
+@font-face {
+    font-family: F1bold;
+    src: url(/layout/Formula1-Bold_web.ttf);
+}
+
+@font-face {
+    font-family: F1regular;
+    src: url(/layout/Formula1-Regular-1.ttf);
+}
